@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  border-bottom: 8px solid #15906b;
+  position: relative;
+}
+.border_radius {
+  border-radius: 1rem;
+}
+
+.BodyBackground {
+  background-color: rgb(57, 51, 51);
+  color: white;
+}
+/* Navbar Section  */
+.NavigationBarBackgroundColor {
+  background-color: #f8f9fa;
+}
+.Navbar__container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  height: 3rem;
+  padding: 2rem;
+}
+.Navbar__logo {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 1rem;
+}
+.Navbar__menuContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.Navbar__getStarted a {
+  background-color: #15906b;
+  padding: 0.7rem;
+  text-decoration: none;
+  color: white;
+  font-family: "inter", sans-serif;
+}
+.Navbar__getStarted a:hover {
+  background-color: #4ebc9b;
+}
+.darkModeIcon {
+  width: 1.6rem;
+  cursor: pointer;
+}
+.cartIcon {
+  width: 1.5rem;
+  cursor: pointer;
+}
+/* .CollectionCart {
+  background-color: #087f5b;
+  width: 15rem;
+  margin-left: 60%;
+  padding: 2rem;
+  color: white;
+  font-family: "Inter";
+  border-radius: 1rem;
+} */
+.CollectionCart div ol li {
+  margin-top: 0.4rem;
+  margin-left: 2rem;
+  /* background-color: rgb(62, 54, 54); */
+}
+
+.Navbar__menu {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  padding: 1rem;
+}
+.Navbar__menu li a {
+  color: rgb(85, 81, 81);
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+.Navbar__menu li a:hover {
+  color: rgb(188, 177, 177);
+}
+
+/* Company intro section  */
+.Container__companyIntro {
+  /* border: 1px solid rgb(18, 106, 161); */
+  width: 65%;
+  margin: auto;
+  clear: both;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 65px;
+  margin-top: 64px;
+}
+.header__box {
+  align-self: center;
+}
+.companyMotivation {
+  color: rgb(52, 50, 50);
+}
+.header__box h2 {
+  font-family: "Inter", sans-serif;
+  line-height: 2.5rem;
+  font-size: 50px;
+
+  letter-spacing: -0.5px;
+}
+.CompanyDescription {
+  color: rgb(85, 81, 81);
+}
+.header__box p {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+header img {
+  width: 100%;
+}
+header a {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  background-color: #15906b;
+  padding: 1rem 1rem 1rem 1rem;
+
+  color: White;
+}
+header a:hover {
+  background-color: #4ebc9b;
+}
+
+/* special product sections  */
+.section__specialChairs {
+  margin-top: 5rem;
+
+  margin-bottom: 10rem;
+}
+.OurSpecialChairs {
+  color: rgb(52, 50, 50);
+}
+
+.section__specialChairs h2 {
+  margin: 0rem 0rem 2rem 0rem;
+  font-family: "Inter", sans-serif;
+
+  font-size: x-large;
+}
+.grids-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+
+.features-icon {
+  width: 2rem;
+  color: #43b895;
+}
+.col .features-title {
+  font-family: "Inter";
+
+  color: rgb(52, 50, 50);
+}
+.col .features-text {
+  margin-top: 1rem;
+  font-family: "inter";
+  line-height: 1.5rem;
+  font-size: small;
+  width: 10rem;
+}
+
+/* //Customers Section */
+.bestComment__Section {
+  display: flex;
+  align-items: center;
+  background-color: #15906b;
+  padding: 2rem;
+  margin-bottom: 10rem;
+  position: relative;
+  justify-content: space-between;
+  /* width: 90%rem; */
+}
+.bestComment__Section img {
+  width: 15rem;
+
+  border-radius: 0.7rem;
+}
+
+.p1 {
+  font-weight: bold;
+  font-family: "inter", sans-serif;
+  color: rgb(52, 50, 50);
+  color: white;
+}
+.p2 {
+  color: white;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: small;
+  width: 33rem;
+  font-style: italic;
+}
+.customer__name {
+  margin-top: 1rem;
+  color: #68d0b1;
+}
+
+.bestComment__Section::before {
+  content: "TOP";
+  display: inline;
+  top: -1.5rem;
+  right: -3rem;
+  position: absolute;
+  background-color: #15906b;
+  padding: 0.5rem 0.5rem;
+  color: white;
+}
+
+/* Best Selling Chairs  */
+.section__bestChairs {
+  margin-bottom: 10rem;
+}
+.sellingBestChairs {
+  color: rgb(52, 50, 50);
+}
+.section__bestChairs h2 {
+  margin-bottom: 2rem;
+  font-family: "inter";
+}
+.chair {
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.213);
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+}
+.grid-3-cols figure {
+  border-radius: 1rem;
+}
+
+.chair-icon {
+  stroke: #087f5b;
+  width: 30px;
+  height: 24px;
+}
+figure img {
+  width: 13rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.chair-box {
+  /* margin-top: 1rem; */
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.chair-box h3 {
+  font-family: "Inter";
+  color: rgb(52, 50, 50);
+}
+
+.chair-details li {
+  line-height: 2rem;
+  font-family: "Inter";
+  font-size: small;
+  list-style: none;
+  /* padding-left: 1rem; */
+  display: flex;
+  margin-top: 0.6rem;
+}
+.chairChracteristics {
+  margin-left: 1rem;
+}
+.chair-details li svg {
+  /* margin-top: 1.5rem; */
+  align-self: center;
+}
+.chair-icon {
+  stroke: #087f5b;
+  width: 24px;
+  height: 24px;
+}
+.price {
+  color: rgb(52, 50, 50);
+}
+
+.chair-price {
+  font-family: "Inter";
+  margin-top: 2rem;
+  justify-self: center;
+}
+
+.chair-price p {
+  display: inline-block;
+  margin-left: 0.4rem;
+  text-decoration: none;
+  color: white;
+  background-color: #15906b;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.chair-price p:hover {
+  background-color: #4ebc9b;
+}
+
+/* Footer Section Designing  */
+.footer {
+  background-color: #087f5b;
+
+  margin-top: 10rem;
+}
+.footerHeading {
+  width: 50rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Inter";
+  font-size: 15px;
+}
+.footerHeading h1 {
+  margin-top: 4rem;
+}
+.footerGetStarted {
+  text-decoration: none;
+  margin-top: 3rem;
+  background-color: #129e74;
+  font-size: 14px;
+  color: #495057;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-family: "Inter";
+  font-size: 20px;
+  border: 0.5px solid white;
+  color: white;
+}
+.footerGetStarted:hover {
+  background-color: #0b7d5b;
+}
+.footerMenuDiv {
+  border-bottom: 1px solid white;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+}
+.footerMenu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin-top: 6rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  margin-bottom: 2rem;
+}
+.footerMenu li a {
+  text-decoration: none;
+  color: white;
+}
+.chatDiv {
+  width: 3rem;
+  position: absolute;
+  bottom: 5rem;
+  right: -10px;
+  color: white;
+  margin-right: 5rem;
+}
+
+.footerSocialMediaIcons {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.footerSocialMediaIcons svg {
+  fill: white;
+}
+
+figure li span {
+  margin-left: 1rem;
+}
