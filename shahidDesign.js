@@ -8,6 +8,7 @@ const darkMode = document.querySelector(".darkModeIcon");
 const companyDesc = document.querySelector(".CompanyDescription");
 const OurSpecialChairs = document.querySelector(".OurSpecialChairs");
 const sellingBestChairs = document.querySelector(".sellingBestChairs");
+const satisfyClients = document.querySelector(".clientsSatisfy");
 const chairPrice = document.querySelector(".price");
 darkMode.addEventListener("click", function () {
   document.body.classList.toggle("BodyBackground");
@@ -23,6 +24,8 @@ darkMode.addEventListener("click", function () {
   chairPrice.classList.toggle("price");
   Navbar.classList.toggle("NavigationBarBackgroundColor");
   Navbar.classList.toggle("BodyBackground");
+  chairPrice.classList.toggle("NavigationBarBackgroundColor");
+  chairPrice.classList.toggle("BodyBackground");
 });
 let arr = [];
 AddToCart.forEach((userItem) => {

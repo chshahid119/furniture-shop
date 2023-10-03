@@ -329,6 +329,7 @@ figure img {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: 5rem;
 }
 
 .item {
@@ -355,7 +356,7 @@ figure img {
 
 .icon {
   width: 24px;
-  heigh: 24px;
+  height: 24px;
   stroke: #087f5b;
 }
 
@@ -473,4 +474,31 @@ figure img {
 
 figure li span {
   margin-left: 1rem;
+}
+
+/* Galeries of Site Section  */
+
+.CustomersProfilesSection {
+  border: 5px solid #129e74;
+  margin-top: 5rem;
+}
+.Galeries__section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.Galeries__section div img {
+  width: 10rem;
+}
+.clientsSatisfy h2 {
+  color: rgb(52, 50, 50);
+}
+
+.clientsSatisfy {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  font-family: "Inter", sans-serif;
 }
