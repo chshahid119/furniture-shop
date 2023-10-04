@@ -492,13 +492,196 @@ figure li span {
 .Galeries__section div img {
   width: 10rem;
 }
-.clientsSatisfy h2 {
-  color: rgb(52, 50, 50);
-}
 
 .clientsSatisfy {
   margin-top: 2rem;
   margin-left: 1rem;
   margin-bottom: 2rem;
   font-family: "Inter", sans-serif;
+  color: rgb(52, 50, 50);
+}
+
+/* Contact Us Form Section  */
+.ContactUsSection {
+  width: 80%;
+  margin: 0px auto 0px auto;
+  margin-top: 10rem;
+  color: rgb(52, 50, 50);
+  /* border: 1px solid #087f5b; */
+}
+
+.contact_form {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* border: 1px solid #080a09; */
+  padding: 2rem;
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.213);
+  border-radius: 5px;
+}
+.ContactUsHeading {
+  color: rgb(52, 50, 50);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.ContactUsSection h2 {
+  color: rgb(52, 50, 50);
+}
+.FirstName__LastName {
+  display: flex;
+  justify-content: space-between;
+}
+.fName {
+  width: 20rem;
+  padding: 10px;
+}
+.lName {
+  margin-left: 5px;
+
+  overflow: hidden;
+}
+.contact_form input {
+  overflow: hidden;
+  padding: 0.7rem;
+  font-family: "inter";
+  color: #4c5055;
+  border: 1px solid #087f5b;
+  border-radius: 0.3rem;
+}
+.contact_form p,
+span {
+  font-family: "Inter";
+  font-size: small;
+  font-weight: large;
+  color: #495057;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: #087f5b;
+  box-shadow: 1px 1px 7px #087f5b;
+}
+.contact_form button {
+  width: 10rem;
+  padding: 0.5rem;
+  background-color: #087f5b;
+  color: rgb(187, 173, 173);
+  border-radius: 0.5rem;
+  border: #087f5b;
+  cursor: pointer;
+  font-family: "Inter";
+  margin-top: 1rem;
+  color: white;
+}
+.contact_form button:hover {
+  background-color: #129e74;
+}
+.optional {
+  color: #868e96;
+  font-size: 15px;
+}
+
+/* Payment Plans Section  */
+.PaymentCards {
+  margin: 10rem auto auto auto;
+  border-radius: 0.3rem;
+}
+.paymentTimeParent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+
+  align-items: center;
+}
+.paymentTime {
+  /* border: 2px solid blue; */
+  background-color: #5af6c7;
+  display: flex;
+  justify-content: center;
+
+  width: 12rem;
+  margin: auto;
+  border-radius: 2rem;
+}
+.cardContainerGrandParent {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.paymentTimeParent > p {
+  font-family: "Inter";
+  font-size: x-small;
+  color: #6c737b;
+}
+.plan {
+  padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+  cursor: pointer;
+}
+.openedPlan {
+  background-color: #087f5b;
+  border-radius: 2rem;
+}
+.payment__cardContainer {
+  border: 1px solid #087f5b;
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  margin-top: 3rem;
+  margin-left: 0.5rem;
+  border: 1px solid #0b7d5b;
+}
+.paymentContainerBtn {
+  background-color: #087f5b;
+  border: transparent;
+  border-radius: 0.2rem;
+  color: white;
+  width: 10rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.paymentcontainerDesc {
+  text-align: center;
+  width: 9rem;
+  color: #6c737b;
+  font-size: small;
+}
+.paymentContainerBtn:hover {
+  background-color: #129e74;
+}
+.freeEsign {
+  font-weight: bold;
+  color: #4c5055;
+}
+.free {
+  color: #4c5055;
+}
+.ul_paymentContainer {
+  list-style: none;
+  margin-top: 1rem;
+}
+.ul_paymentContainer li {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.7rem;
+  color: #6c737b;
+  font-size: small;
+}
+.ul_paymentContainer ul li svg {
+  width: 2rem;
+}
+.alltimeSupport {
+  width: 20rem;
+  color: #6c737b;
+  margin: auto;
+  font-size: small;
+}
+.colorCard {
+  background-color: #aaebd7;
 }

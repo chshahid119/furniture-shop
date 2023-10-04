@@ -10,6 +10,7 @@ const OurSpecialChairs = document.querySelector(".OurSpecialChairs");
 const sellingBestChairs = document.querySelector(".sellingBestChairs");
 const satisfyClients = document.querySelector(".clientsSatisfy");
 const chairPrice = document.querySelector(".price");
+const togglePaymentPlansButton = document.querySelectorAll(".plan");
 darkMode.addEventListener("click", function () {
   document.body.classList.toggle("BodyBackground");
   Mainheading.classList.toggle("companyMotivation");
@@ -35,6 +36,21 @@ AddToCart.forEach((userItem) => {
     console.log(...arr);
   });
 });
+// const removeAllClasses = togglePaymentPlansButton.filter(
+//   (el) => el.classList === "openedPlan"
+// );
+console.log(togglePaymentPlansButton);
+
+// payment plans toggle button
+togglePaymentPlansButton.forEach((el) =>
+  el.addEventListener("click", function (e) {
+    let clickedElement = e.target;
+    togglePaymentPlansButton[0].classList.remove("openedPlan");
+    togglePaymentPlansButton[1].classList.remove("openedPlan");
+    clickedElement.classList.toggle("openedPlan");
+  })
+);
+
 // Show Cart when click on Cart Icon
 // CollectionCart.addEventListener("click", function () {
 //   html = ` <div class="CollectionCart">
