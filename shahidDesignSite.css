@@ -349,7 +349,7 @@ figure img {
 .item {
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
   padding: 24px;
-
+  cursor: pointer;
   display: grid;
   grid-template-columns: auto 1fr auto;
   column-gap: 24px;

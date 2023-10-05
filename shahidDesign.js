@@ -1,7 +1,7 @@
 "strict mode";
 const Navbar = document.querySelector("Navbar__container");
 const AddToCart = document.querySelectorAll(".addToCart");
-
+const accordionOpen = document.querySelectorAll(".item");
 const orederedList = document.querySelector(".orederedList");
 const Mainheading = document.querySelector(".companyMotivation");
 const darkMode = document.querySelector(".darkModeIcon");
@@ -15,6 +15,7 @@ const cartIcon = document.querySelector(".cartIcon");
 const cartList = document.querySelector(".cartList");
 const CartVisibility = document.querySelector(".cart_container");
 const addtoCartList = document.querySelector(".cart_ol");
+
 darkMode.addEventListener("click", function () {
   document.body.classList.toggle("BodyBackground");
   Mainheading.classList.toggle("companyMotivation");
@@ -35,9 +36,20 @@ darkMode.addEventListener("click", function () {
 let arr = [];
 AddToCart.forEach((userItem) => {
   userItem.addEventListener("click", function (e) {
+    userItem.textContent = "Added to Cart";
     const value = e.target.getAttribute("value");
     arr.push(value);
-    console.log(...arr);
+    // console.log(...arr);
+    // console.log(userItem.classList);
+    userItem.computedStyleMap.marginLeft = "1rem";
+  });
+});
+
+// Accordion Open functionality
+accordionOpen.forEach((accord) => {
+  accord.addEventListener("click", function (e) {
+    // console.log(e.target);
+    accord.classList.toggle("open");
   });
 });
 
@@ -50,7 +62,7 @@ togglePaymentPlansButton.forEach((el) =>
     clickedElement.classList.toggle("openedPlan");
   })
 );
-console.log(arr);
+// console.log(arr);
 
 // posted all the data in the cart
 // Show Cart when click on Cart Icon
