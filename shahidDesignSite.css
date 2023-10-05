@@ -59,21 +59,35 @@ body {
   width: 1.5rem;
   cursor: pointer;
 }
-/* .CollectionCart {
-  background-color: #087f5b;
-  width: 15rem;
-  margin-left: 60%;
-  padding: 2rem;
-  color: white;
-  font-family: "Inter";
-  border-radius: 1rem;
-} */
-.CollectionCart div ol li {
-  margin-top: 0.4rem;
-  margin-left: 2rem;
-  /* background-color: rgb(62, 54, 54); */
-}
 
+.cart_container {
+  background-color: #36a483;
+  width: 13rem;
+
+  position: absolute;
+  top: 4rem;
+  left: -1rem;
+  display: flex;
+  justify-content: center;
+
+  border-radius: 0.5rem;
+  color: white;
+  margin-left: 65%;
+  opacity: 0.8;
+}
+.cart_ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.visibility {
+  display: none;
+}
+.cartList {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
 .Navbar__menu {
   display: flex;
   list-style: none;
@@ -593,12 +607,12 @@ input:focus {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
-
+  color: white;
   align-items: center;
 }
 .paymentTime {
   /* border: 2px solid blue; */
-  background-color: #5af6c7;
+  background-color: #aaebd7;
   display: flex;
   justify-content: center;
 

@@ -1,8 +1,8 @@
 "strict mode";
 const Navbar = document.querySelector("Navbar__container");
 const AddToCart = document.querySelectorAll(".addToCart");
-const CollectionCart = document.querySelector(".cartIcon");
-const NavbarContainer = document.querySelector(".Navbar__container");
+
+const orederedList = document.querySelector(".orederedList");
 const Mainheading = document.querySelector(".companyMotivation");
 const darkMode = document.querySelector(".darkModeIcon");
 const companyDesc = document.querySelector(".CompanyDescription");
@@ -11,6 +11,10 @@ const sellingBestChairs = document.querySelector(".sellingBestChairs");
 const satisfyClients = document.querySelector(".clientsSatisfy");
 const chairPrice = document.querySelector(".price");
 const togglePaymentPlansButton = document.querySelectorAll(".plan");
+const cartIcon = document.querySelector(".cartIcon");
+const cartList = document.querySelector(".cartList");
+const CartVisibility = document.querySelector(".cart_container");
+const addtoCartList = document.querySelector(".cart_ol");
 darkMode.addEventListener("click", function () {
   document.body.classList.toggle("BodyBackground");
   Mainheading.classList.toggle("companyMotivation");
@@ -36,10 +40,6 @@ AddToCart.forEach((userItem) => {
     console.log(...arr);
   });
 });
-// const removeAllClasses = togglePaymentPlansButton.filter(
-//   (el) => el.classList === "openedPlan"
-// );
-console.log(togglePaymentPlansButton);
 
 // payment plans toggle button
 togglePaymentPlansButton.forEach((el) =>
@@ -50,18 +50,14 @@ togglePaymentPlansButton.forEach((el) =>
     clickedElement.classList.toggle("openedPlan");
   })
 );
+console.log(arr);
 
+// posted all the data in the cart
 // Show Cart when click on Cart Icon
-// CollectionCart.addEventListener("click", function () {
-//   html = ` <div class="CollectionCart">
-//   <div>
-//     <ol>
-//       <li>The Laid Back</li>
-//       <li>The Laid Back</li>
-//       <li>The Laid Back</li>
-//     </ol>
-//   </div>
-// </div>`;
-
-//   NavbarContainer.insertAdjacentHTML("afterend", html);
-// });
+cartIcon.addEventListener("click", function () {
+  CartVisibility.classList.toggle("visibility");
+  console.log(CartVisibility.classList);
+  arr.map((curr) => {
+    addtoCartList.innerHTML += `<li>${curr}</li>`;
+  });
+});
