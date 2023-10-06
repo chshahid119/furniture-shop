@@ -33,15 +33,15 @@ darkMode.addEventListener("click", function () {
   chairPrice.classList.toggle("NavigationBarBackgroundColor");
   chairPrice.classList.toggle("BodyBackground");
 });
+
 let arr = [];
 AddToCart.forEach((userItem) => {
   userItem.addEventListener("click", function (e) {
-    userItem.textContent = "Added to Cart";
+    userItem.textContent = "Added ✅";
     const value = e.target.getAttribute("value");
     arr.push(value);
     // console.log(...arr);
     // console.log(userItem.classList);
-    userItem.computedStyleMap.marginLeft = "1rem";
   });
 });
 
